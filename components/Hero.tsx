@@ -26,7 +26,10 @@ export default function Hero(): React.JSX.Element {
         md:translate-x-0 md:right-[25%] md:top-[25%] md:h-[300px] md:w-[300px] rounded-full 
         bg-cover bg-center bg-no-repeat border-emerald-deep border-5 shadow-lg
     "
-        style={{ backgroundImage: `url(${profilePhoto.src})` }}
+        style={{
+          backgroundImage: `url(${profilePhoto.src})`,
+          backgroundSize: 400,
+        }}
       ></div>
     </div>
   );
