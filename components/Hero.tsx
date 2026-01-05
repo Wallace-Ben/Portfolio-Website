@@ -17,14 +17,16 @@ export default function Hero(): React.JSX.Element {
         </span>
       </div>
       <div className="absolute md:left-[25%] md:top-[40%] max-w-[350px] top-[45%] left-[20%] flex flex-wrap">
-        <span className=" text-charcoal md:text-lg md:mt-2 text-base">
-          I create intuitive, user-focused experiences.
+        <span className="font-medium text-charcoal/80 md:text-xl text-lg ">
+          {" "}
+          Aspiring to build intuitive, user-focused experiences with React and
+          Next.js.
         </span>
       </div>
       <div
-        className="absolute h-[150px] w-[150px] left-[50%] top-[5%] translate-x-[-50%] 
+        className="absolute h-[150px] w-[150px] left-[50%] top-[5%] translate-x-[-54%] translate-y-[-10%]
         md:translate-x-0 md:right-[25%] md:top-[25%] md:h-[300px] md:w-[300px] rounded-full 
-        bg-cover bg-center bg-no-repeat border-emerald-deep border-5 shadow-lg
+        bg-cover bg-center bg-no-repeat border-emerald-500 border-5 shadow-lg
     "
         style={{
           backgroundImage: `url(${profilePhoto.src})`,
