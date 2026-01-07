@@ -9,9 +9,13 @@
   /* Existing Greens */
   --color-mist: #f2f7f5;
   --color-mint-light: #dceee8;
+  --color-mint-100: #c8e4db;
+  --color-mint-200: #b4dace;
+  --color-mint-300: #a0d0c1;
   --color-mint: #8cc7b5;
   --color-emerald: #2f8f6f;
   --color-emerald-deep: #1f6a53;
+  --color-emerald-darker: #144a3a;
 
   --color-slate: #4b5c54;
   --color-charcoal: #1f2b24;

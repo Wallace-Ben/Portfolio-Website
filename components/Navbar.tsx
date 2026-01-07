@@ -13,7 +13,7 @@ export default function Navbar(): React.JSX.Element {
 
   return (
     <nav className="bg-emerald-deep shadow-md">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         {/* 1. Global Styling Container */}
         <div className="h-18 flex items-center">
           {/* 2. Local Styling Container (navbar row) */}
