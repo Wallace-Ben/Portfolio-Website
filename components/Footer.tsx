@@ -5,7 +5,7 @@ export default function Footer(): React.JSX.Element {
   return (
     <footer className="bg-emerald-deep border-t-4 border-emerald-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="flex flex-row justify-between relative p-7 mx-[25%]">
+        <div className="flex flex-row justify-between relative md:p-7 p-5 md:mx-[25%] mx-[5%]">
           <div>
             <h3 className="font-semibold text-mint-light pb-2">Navigation</h3>
             <ul>
@@ -54,7 +54,7 @@ export default function Footer(): React.JSX.Element {
                 </Link>
               </div>
             </div>
-            <p className="text-mint-light">© 2026 Ben Wallace</p>
+            <p className="text-mint-light mb-2">© 2026 Ben Wallace</p>
           </div>
         </div>
       </div>
