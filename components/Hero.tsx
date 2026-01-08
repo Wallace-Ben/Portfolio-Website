@@ -4,11 +4,11 @@ import heroBackground from "@/assets/images/hero-background.svg";
 import profilePhoto from "@/assets/images/linkedin-photo.jpg";
 import ClickButton from "./Button/ClickButton";
 import LinkButton from "./Button/LinkButton";
-import { ButtonType } from "./Button/button.types";
+import { ButtonSize, ButtonType } from "./Button/button.types";
 
 export default function Hero(): React.JSX.Element {
   function scrollToRecentProjects() {
-    const element = document.getElementById("home-text");
+    const element = document.getElementById("recent-projects");
 
     element?.scrollIntoView({ behavior: "smooth" });
   }
@@ -34,11 +34,16 @@ export default function Hero(): React.JSX.Element {
           <div className="flex justify-center md:mt-3 mt-5">
             <ClickButton
               type={ButtonType.Primary}
+              size={ButtonSize.Large}
               onClick={scrollToRecentProjects}
             >
               Recent Projects
             </ClickButton>{" "}
-            <LinkButton type={ButtonType.Secondary} link="/contact">
+            <LinkButton
+              type={ButtonType.Secondary}
+              size={ButtonSize.Large}
+              link="/contact"
+            >
               Contact Me
             </LinkButton>
           </div>

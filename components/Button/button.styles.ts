@@ -1,5 +1,14 @@
-export const primaryButtonStyles =
-  "text-mist bg-emerald-500 border-emerald-500 hover:border-emerald-deep w-50 md:px-0 px-2 rounded-full border-2 py-1 mx-3 font-medium hover:cursor-pointer shadow-md";
+// Base Button Styling
+export const buttonBaseStyles =
+  "flex items-center justify-center rounded-full border-2 font-medium hover:cursor-pointer shadow-md transition";
 
-export const secondaryButtonStyles =
-  "text-charcoal border-emerald-500 bg-mint-light hover:border-emerald-deep w-50 rounded-full border-2 py-1 mx-3 font-medium hover:cursor-pointer shadow-md";
+// Primary and Secondary Button Styling
+export const primaryButtonTypeStyles =
+  "text-mist bg-emerald-500 border-emerald-500 hover:border-emerald-deep";
+export const secondaryButtonTypeStyles =
+  "text-charcoal bg-mint-light border-emerald-500 hover:border-emerald-deep";
+
+// Button Size Styling
+export const largeButtonSizeStyles = "w-50 md:px-0 mx-3 md:px-4 px-2 py-2";
+export const smallButtonSizeStyles = "w-20 px-2 md:px-0 py-1 mx-3";
+export const defaultButtonSizeStyles = "w-40 px-2 md:px-2 py-2 mx-3";
