@@ -10,17 +10,17 @@ interface Props {
 export default function RecentProjectCard({
   inverted,
 }: Props): React.JSX.Element {
-  const invertedImageStyling = inverted ? "md:order-2" : "md:order-1 md:mr-10";
-  const invertedTextStyling = inverted ? "md:order-1 md:mr-10" : "md:order-2";
+  const invertedImageStyling = inverted ? "lg:order-2" : "lg:order-1 lg:mr-10";
+  const invertedTextStyling = inverted ? "lg:order-1 lg:mr-10" : "lg:order-2";
   return (
-    <div className="flex md:flex-row flex-col justify-between p-4 md:my-4 w-full max-w-7xl px-5 rounded-2xl">
+    <div className="flex lg:flex-row flex-col justify-between p-4 lg:my-4 w-full max-w-7xl px-5 rounded-2xl">
       <div
-        className={`flex md:flex-2 mb-5 md:mb-0 border-emerald-500 border-3 rounded-lg overflow-hidden ${invertedImageStyling}`}
+        className={`flex lg:flex-2 mb-5 lg:mb-0 border-emerald-500 border-3 rounded-lg overflow-hidden ${invertedImageStyling}`}
       >
         <Image alt="project-image" src={projectPhoto} />
       </div>
       <div
-        className={`flex flex-col md:flex-2 md:mb-0 mb-8 items-center justify-center ${invertedTextStyling}`}
+        className={`flex flex-col lg:flex-2 lg:mb-0 mb-8 items-center justify-center ${invertedTextStyling}`}
       >
         <h2 className="text-emerald-500 font-semibold text-xl mb-2">
           Project Description
