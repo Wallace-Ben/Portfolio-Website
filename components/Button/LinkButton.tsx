@@ -19,7 +19,9 @@ export default function ClickButton({
   const buttonType =
     type === ButtonType.Primary
       ? buttonStyles.primaryButtonTypeStyles
-      : buttonStyles.secondaryButtonTypeStyles;
+      : type === ButtonType.Secondary
+      ? buttonStyles.secondaryButtonTypeStyles
+      : buttonStyles.submitButtonTypeStyles;
 
   const buttonSize =
     size === ButtonSize.Large

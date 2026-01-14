@@ -7,6 +7,9 @@
 
 @theme {
   /* Existing Greens */
+  --color-mist-air: #fbfefe;
+  --color-mist-lighter: #fafdfc;
+  --color-mist-light: #f8fbfa;
   --color-mist: #f2f7f5;
   --color-mint-light: #dceee8;
   --color-mint-100: #c8e4db;

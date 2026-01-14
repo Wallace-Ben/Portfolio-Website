@@ -7,6 +7,8 @@ export const primaryButtonTypeStyles =
   "text-mist bg-emerald-500 border-emerald-500 hover:border-emerald-deep";
 export const secondaryButtonTypeStyles =
   "text-charcoal bg-mint-light border-emerald-500 hover:border-emerald-deep";
+export const submitButtonTypeStyles =
+  "text-mist-light bg-emerald-500/90 border-emerald hover:border-emerald-deep hover:bg-emerald-500";
 
 // Button Size Styling
 export const largeButtonSizeStyles = "w-50 md:px-0 mx-3 md:px-4 px-2 py-2";
