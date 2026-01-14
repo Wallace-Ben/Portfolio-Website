@@ -61,7 +61,7 @@ export default function Navbar(): React.JSX.Element {
             <div className="hidden md:block md:ml-6">
               {/* 5. Desktop links visibility wrapper */}
 
-              <div className="space-x-2  -translate-y-[-4px]">
+              <div className="space-x-2  -translate-y-1">
                 {/* 6. Desktop links flex/spacing wrapper */}
                 <Link
                   className={
