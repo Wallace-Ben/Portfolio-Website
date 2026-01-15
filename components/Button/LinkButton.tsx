@@ -7,6 +7,7 @@ interface LinkButtonProps {
   type: ButtonType;
   size: ButtonSize;
   link: string;
+  openNewTab?: boolean;
   children: React.ReactNode;
 }
 
@@ -14,6 +15,7 @@ export default function ClickButton({
   type,
   size,
   link,
+  openNewTab,
   children,
 }: LinkButtonProps): React.JSX.Element {
   const buttonType =
@@ -36,7 +38,12 @@ export default function ClickButton({
     buttonSize,
   ].join(" ");
   return (
-    <Link href={link} className={linkButtonStyling}>
+    <Link
+      href={link}
+      className={linkButtonStyling}
+      target={openNewTab ? "_blank" : undefined}
+      rel={openNewTab ? "noopener noreferrer" : undefined}
+    >
       <p>{children}</p>
     </Link>
   );

@@ -31,6 +31,15 @@ export default function ContactForm(): React.JSX.Element {
               <IoLogoGithub size={40} className="text-charcoal" />
             </Link>
           </div>
+          <p className="mt-5 underline text-charcoal">
+            <Link
+              href="/ben-wallace-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download CV
+            </Link>
+          </p>
         </div>
         <form
           action={`https://formsubmit.co/${process.env.NEXT_PUBLIC_CONTACT_EMAIL}`}

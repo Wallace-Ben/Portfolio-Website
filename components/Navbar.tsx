@@ -61,7 +61,7 @@ export default function Navbar(): React.JSX.Element {
             <div className="hidden md:block md:ml-6">
               {/* 5. Desktop links visibility wrapper */}
 
-              <div className="space-x-2  -translate-y-1">
+              <div className="space-x-2  translate-y-1">
                 {/* 6. Desktop links flex/spacing wrapper */}
                 <Link
                   className={
@@ -107,22 +107,17 @@ export default function Navbar(): React.JSX.Element {
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="flex">
+            <div className="flex gap-8 mr-4">
               <Link
                 href="https://www.linkedin.com/in/ben-wallace-630462174/"
-                className="px-4"
                 target="_blank"
               >
                 <IoLogoLinkedin size={40} className="text-emerald-400" />
               </Link>
-              <Link
-                href="https://github.com/Wallace-Ben"
-                className="px-4"
-                target="_blank"
-              >
+              <Link href="https://github.com/Wallace-Ben" target="_blank">
                 <IoLogoGithub size={40} className="text-emerald-400" />
               </Link>
-              <Link href="/" className="px-4" target="_blank">
+              <Link href="/contact">
                 <IoMail size={40} className="text-emerald-400" />
               </Link>
             </div>

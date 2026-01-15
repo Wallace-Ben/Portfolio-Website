@@ -31,7 +31,7 @@ export default function Hero(): React.JSX.Element {
             Aspiring to build intuitive, user-focused experiences with React and
             Next.js.
           </span>
-          <div className="flex justify-center md:mt-3 mt-5">
+          <div className="flex justify-center md:mt-4 mt-5">
             <ClickButton
               type={ButtonType.Primary}
               size={ButtonSize.Large}

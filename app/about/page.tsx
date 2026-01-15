@@ -4,16 +4,13 @@ import profilePhoto from "../../assets/images/linkedin-photo.jpg";
 
 export default function About() {
   return (
-    <div className="flex flex-col p-5 md:px-8 max-w-6xl mx-auto xl:items-start items-center xl:px-0">
+    <div className="flex flex-col p-10 md:px-8 max-w-6xl mx-auto xl:items-start items-center xl:px-0">
       <h1 className="xl:text-4xl text-2xl font-semibold text-emerald-500 xl:mb-0 mb-2">
         About Me
       </h1>
-
       <div
         className="xl:hidden shrink-0 h-[150px] w-[150px] md:h-40 md:w-40 xl:translate-x-0 xl:h-[170px] xl:w-[170px] rounded-[20%] 
-        bg-cover bg-center bg-no-repeat border-3 border-emerald-500 xl:shadow-md shadow-sm shadow-emerald-deep xl:mb-0 mb-4
-        md:mb-6
-    "
+        bg-cover bg-center bg-no-repeat border-3 border-emerald-500 xl:shadow-md shadow-sm shadow-emerald-deep "
         style={{
           backgroundImage: `url(${profilePhoto.src})`,
           backgroundSize: 300,
@@ -24,7 +21,7 @@ export default function About() {
         Building accessible, user-friendly interfaces with TypeScript and React.
       </p>
 
-      <div className="max-w-5xl">
+      <div className="max-w-5xl mt-2">
         <div className="mt-5 xl:mt-2 xl:mb-5 mb-8 xl:text-start text-center xl:px-0 px-8 md:px-4">
           <h2 className="font-semibold text-xl text-emerald-500">Summary</h2>
 
@@ -36,10 +33,9 @@ export default function About() {
               worked in data analysis, specialising in UX/UI analytics, which
               has shaped how I approach designing and building systems.
             </p>
-
             <div
               className="hidden xl:block shrink-0 -mt-25 h-[100px] w-[100px] xl:translate-x-0 xl:h-[170px] xl:w-[170px] rounded-[20%] 
-        bg-cover bg-center bg-no-repeat border-3 border-emerald-500 xl:shadow-md shadow-sm shadow-emerald-deep xl:mb-0 mb-4
+        bg-cover bg-center bg-no-repeat border-3 border-emerald-500 xl:shadow-md shadow-sm shadow-emerald-deep xl:mb-2 mb-4
     "
               style={{
                 backgroundImage: `url(${profilePhoto.src})`,
@@ -54,7 +50,7 @@ export default function About() {
             Experience Highlights
           </h2>
 
-          <div className="mb-8 xl:mb-5">
+          <div className="mb-8 xl:mb-8">
             <span className="flex xl:flex-row flex-col justify-between md:items-center">
               <h3 className="font-semibold text-emerald-500">
                 Frontend Developer - Version 1
@@ -72,7 +68,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="mb-8 xl:mb-5">
+          <div className="mb-8 xl:mb-8">
             <span className="flex xl:flex-row flex-col justify-between md:items-center">
               <h3 className="font-semibold text-emerald-500">
                 Data Analyst - Jarmany
@@ -126,11 +122,12 @@ export default function About() {
             View my projects
           </LinkButton>
           <LinkButton
-            link="/contact"
+            link="/ben-wallace-cv.pdf"
             type={ButtonType.Secondary}
             size={ButtonSize.Default}
+            openNewTab={true}
           >
-            Get in touch
+            Download CV
           </LinkButton>
         </div>
       </div>
