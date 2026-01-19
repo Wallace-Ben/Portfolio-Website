@@ -9,6 +9,7 @@ interface LinkButtonProps {
   link: string;
   openNewTab?: boolean;
   children: React.ReactNode;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
 export default function ClickButton({
@@ -17,20 +18,21 @@ export default function ClickButton({
   link,
   openNewTab,
   children,
+  onClick,
 }: LinkButtonProps): React.JSX.Element {
   const buttonType =
     type === ButtonType.Primary
       ? buttonStyles.primaryButtonTypeStyles
       : type === ButtonType.Secondary
-      ? buttonStyles.secondaryButtonTypeStyles
-      : buttonStyles.submitButtonTypeStyles;
+        ? buttonStyles.secondaryButtonTypeStyles
+        : buttonStyles.submitButtonTypeStyles;
 
   const buttonSize =
     size === ButtonSize.Large
       ? buttonStyles.largeButtonSizeStyles
       : size === ButtonSize.Small
-      ? buttonStyles.smallButtonSizeStyles
-      : buttonStyles.defaultButtonSizeStyles;
+        ? buttonStyles.smallButtonSizeStyles
+        : buttonStyles.defaultButtonSizeStyles;
 
   const linkButtonStyling = [
     buttonStyles.buttonBaseStyles,
@@ -43,6 +45,7 @@ export default function ClickButton({
       className={linkButtonStyling}
       target={openNewTab ? "_blank" : undefined}
       rel={openNewTab ? "noopener noreferrer" : undefined}
+      onClick={onClick}
     >
       <p>{children}</p>
     </Link>

@@ -25,10 +25,10 @@ export default function ContactForm(): React.JSX.Element {
               href="https://www.linkedin.com/in/ben-wallace-630462174/"
               target="_blank"
             >
-              <IoLogoLinkedin size={40} className="text-charcoal" />
+              <IoLogoLinkedin size={50} className="text-charcoal" />
             </Link>
             <Link href="https://github.com/Wallace-Ben" target="_blank">
-              <IoLogoGithub size={40} className="text-charcoal" />
+              <IoLogoGithub size={50} className="text-charcoal" />
             </Link>
           </div>
           <p className="mt-5 underline text-charcoal">

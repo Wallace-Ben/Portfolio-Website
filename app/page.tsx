@@ -1,7 +1,16 @@
 import Hero from "@/components/Hero";
 import RecentProjectCard from "@/components/RecentProjectCard";
+import projectsData from "./projects/projects.json";
+import { Project } from "@/assets/types";
 
 export default function Home() {
+  // Sort Projects array by most recent projects - may do a 'featured projects' section instead
+  function dateSort(a: Project, b: Project) {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  }
+
+  const sortedData = projectsData.sort(dateSort);
+
   return (
     <>
       <Hero />
@@ -13,10 +22,10 @@ export default function Home() {
           Recent Projects
         </h2>
         <div className="flex flex-col">
-          <RecentProjectCard inverted={false} />
-          <RecentProjectCard inverted={true} />
-          <RecentProjectCard inverted={false} />
-          <RecentProjectCard inverted={true} />
+          <RecentProjectCard inverted={false} data={sortedData[0]} />
+          <RecentProjectCard inverted={true} data={sortedData[1]} />
+          <RecentProjectCard inverted={false} data={sortedData[2]} />
+          <RecentProjectCard inverted={true} data={sortedData[3]} />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import LogoSVG from "@/assets/images/logo";
+import LogoSVG from "@/public/images/logo";
 import { fredoka } from "@/assets/fonts";
 import { usePathname } from "next/navigation";
 import { IoLogoLinkedin, IoLogoGithub, IoMail } from "react-icons/io5";

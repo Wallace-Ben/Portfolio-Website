@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import heroBackground from "@/assets/images/hero-background.svg";
-import profilePhoto from "@/assets/images/linkedin-photo.jpg";
+import heroBackground from "@/public/images/hero-background.svg";
+import profilePhoto from "@/public/images/linkedin-photo.jpg";
 import ClickButton from "./Button/ClickButton";
 import LinkButton from "./Button/LinkButton";
 import { ButtonSize, ButtonType } from "./Button/button.types";

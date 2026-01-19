@@ -1,6 +1,6 @@
 import { ButtonSize, ButtonType } from "@/components/Button/button.types";
 import LinkButton from "@/components/Button/LinkButton";
-import profilePhoto from "../../assets/images/linkedin-photo.jpg";
+import profilePhoto from "@/public/images/linkedin-photo.jpg";
 
 export default function About() {
   return (
