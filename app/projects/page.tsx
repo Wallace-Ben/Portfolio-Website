@@ -7,7 +7,7 @@ import { Project } from "@/assets/types";
 import { PaginationArray, NumOfPages } from "@/lib/pagination";
 
 export default function Projects() {
-  const numPerPage = 12;
+  const numPerPage = 9;
 
   const searchParams = useSearchParams();
   const currentPage = !searchParams.size ? 1 : Number(searchParams.get("page"));
@@ -22,8 +22,8 @@ export default function Projects() {
   );
 
   return (
-    <div className="flex flex-col bg-mist lg:py-[2%] lg:mb-5 items-center">
-      <h2 className="xl:text-4xl text-2xl text-emerald-500 font-semibold xl:my-5 mt-5">
+    <div className="flex flex-col relative bg-mist lg:py-[2%] lg:mb-5 items-center">
+      <h2 className="xl:text-4xl text-2xl text-emerald-500 font-semibold mt-5 mb-10">
         Projects
       </h2>
       {/* Render the projects in by mapping over projectsData */}
@@ -36,7 +36,7 @@ export default function Projects() {
       </div>
 
       {/* Renders pagination links */}
-      <div className="flex gap-8 mt-5">
+      <div className="flex gap-8 mt-10">
         <Link
           href={`/projects?page=${currentPage - 1}`}
           className={currentPage === 1 ? "hidden" : generalStyles}
