@@ -9,7 +9,7 @@ export function NumOfPages(numPerPage: number, data: Project[]) {
 export function PaginationArray(
   currentPage: number,
   numPerPage: number,
-  data: Project[]
+  data: Project[],
 ) {
   const numPages = NumOfPages(numPerPage, data);
 

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ButtonSize, ButtonType } from "./Button/button.types";
-import LinkButton from "./Button/LinkButton";
 import projectPhoto from "@/public/images/project-screenshot.png";
 import { Project } from "@/assets/types";
 import Link from "next/link";
@@ -18,49 +17,45 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
 
   return (
     <>
-      <Link href="/" className="contents">
+      <Link href="/contact" className="contents">
         <div
-          className="flex flex-col justify-between items-center 
-        xl:p-10 max-w-md cursor-pointer
-      border-2 border-emerald-500/20 shadow-md rounded-2xl bg-mist-air hover:bg-mint-light/40 hover:border-emerald-300 hover:scale-105 transition duration-400"
+          className="flex flex-col justify-between items-center xl:py-5 px-20 max-w-[280px] cursor-pointer
+      border-2 border-emerald-500/20 shadow-md rounded-2xl bg-mist-lighter hover:bg-mist-air hover:border-emerald-300 hover:scale-110 transition duration-400"
         >
-          <div
-            className={`flex md:flex-1 lg:flex-2 mb-5 md:mb-5 border-emerald-400 border-2 w-full rounded-lg overflow-hidden bg-charcoal`}
-          >
-            <Image
-              src={data.image}
-              alt="project-image"
-              onClick={(e) => {
-                setOpen(true);
-                e.preventDefault();
-                e.stopPropagation();
-              }}
-              className="cursor-pointer hover:opacity-97 transition duration-200"
-              width={1920}
-              height={953}
-            />
-          </div>
-
           <div
             className={`flex flex-col md:flex-1 lg:flex-2 md:mb-0 mb-8 items-center justify-center`}
           >
-            <h2 className="text-emerald-500 font-semibold text-xl mb-2">
+            <h2 className="text-emerald-500 font-semibold text-xl mb-1">
               {data.title}
             </h2>
-            <p className="text-center text-emerald-500 text-md mb-2 font-semibold">
+            <div className="relative w-60 h-30 rounded-lg overflow-hidden border-2 border-emerald-400 bg-charcoal mb-2">
+              <Image
+                src={data.image}
+                alt="project-image"
+                fill
+                className="object-cover"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setOpen(true);
+                }}
+              />
+            </div>
+
+            <p className="text-center text-emerald-500 text-md mb-1 font-semibold">
               Built with:
             </p>
-            <div className="flex justify-center gap-x-5 mb-5">
+            <div className="flex justify-center mb-3 gap-x-1.5">
               {data.key_skills.map((word: string, index: number) => (
                 <p
                   key={`${word}${index}`}
-                  className="text-center px-2 py-1 min-w-20 rounded-full border-2 border-emerald-500 bg-mint-light/70"
+                  className="text-center min-w-15 border rounded-full border-emerald-500 px-1.5 py-0.5 text-midstone bg-mint-light/70"
                 >
                   {word}
                 </p>
               ))}
             </div>
-            <p className="text-center text-emerald-500 text-md mb-5">
+            <p className="text-center text-emerald-500 text-md mb-3">
               {data.description}
             </p>
             <ClickButton type={ButtonType.Primary} size={ButtonSize.Default}>
@@ -72,7 +67,11 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
         {open && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
-            onClick={() => setOpen(false)}
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              setOpen(false);
+            }}
           >
             <button
               className="absolute top-4 right-6 text-white text-4xl"

@@ -23,15 +23,17 @@ export default function ClickButton({
     type === ButtonType.Primary
       ? buttonStyles.primaryButtonTypeStyles
       : type === ButtonType.Secondary
-      ? buttonStyles.secondaryButtonTypeStyles
-      : buttonStyles.submitButtonTypeStyles;
+        ? buttonStyles.secondaryButtonTypeStyles
+        : type === ButtonType.Submit
+          ? buttonStyles.submitButtonTypeStyles
+          : buttonStyles.filterButtonTypeStyles;
 
   const buttonSize =
     size === ButtonSize.Large
       ? buttonStyles.largeButtonSizeStyles
       : size === ButtonSize.Small
-      ? buttonStyles.smallButtonSizeStyles
-      : buttonStyles.defaultButtonSizeStyles;
+        ? buttonStyles.smallButtonSizeStyles
+        : buttonStyles.defaultButtonSizeStyles;
 
   const clickButtonStyling = [
     buttonStyles.buttonBaseStyles,
