@@ -13,6 +13,9 @@ export const submitButtonTypeStyles =
 export const filterButtonTypeStyles =
   "border-emerald-500 bg-mist-light hover:border-emerald hover:bg-emerald/10";
 
+export const selectedFilterTypeStyles =
+  "border-amber-50 bg-mist-light hover:border-emerald hover:bg-emerald/10";
+
 // Button Size Styling
 export const largeButtonSizeStyles = "w-50 md:px-0 mx-3 md:px-4 px-2 py-2";
 export const smallButtonSizeStyles = "px-2 py-1";

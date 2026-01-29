@@ -8,6 +8,7 @@ import { PaginationArray, NumOfPages } from "@/lib/pagination";
 import { IoFilter, IoChevronDown } from "react-icons/io5";
 import ClickButton from "@/components/Button/ClickButton";
 import { ButtonSize, ButtonType } from "@/components/Button/button.types";
+import { useState } from "react";
 
 export default function Projects() {
   const numPerPage = 8;
@@ -23,6 +24,43 @@ export default function Projects() {
     (currentPage - 1) * numPerPage + numPerPage,
   );
 
+  const [selectFilter, setSelectFilter] = useState<string[]>([]);
+
+  const techObject: Record<string, { count: number; index: number[] }> = {};
+
+  function CreateProjectObject(skill: string, projectIndex: number) {
+    if (!techObject[skill]) {
+      techObject[skill] = { count: 0, index: [] };
+    }
+    techObject[skill].count += 1;
+
+    if (!techObject[skill].index.includes(projectIndex)) {
+      techObject[skill].index.push(projectIndex);
+    }
+  }
+
+  for (let i = 0; i < projectsData.length; i++) {
+    for (let j = 0; j < projectsData[i].keywords.length; j++) {
+      CreateProjectObject(projectsData[i].keywords[j], i);
+    }
+    for (let k = 0; k < projectsData[i].key_skills.length; k++) {
+      CreateProjectObject(projectsData[i].key_skills[k], i);
+    }
+  }
+
+  const sortedTechnology = Object.entries(techObject)
+    .slice()
+    .sort((a, b) => b[1].count - a[1].count)
+    .map((technology) => technology[0]);
+
+  function SelectProjectFilter(skill: string) {
+    setSelectFilter((prevFilter) =>
+      prevFilter.includes(skill)
+        ? prevFilter.filter((f) => f !== skill)
+        : [...prevFilter, skill],
+    );
+  }
+
   return (
     <div className="flex justify-center bg-mist">
       <div className="flex flex-col relative lg:py-[2%] lg:mb-5 items-center max-w-7xl">
@@ -35,24 +73,18 @@ export default function Projects() {
             <IoFilter size={23} />
             <p>Filter by:</p>
           </span>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
-          <ClickButton size={ButtonSize.Small} type={ButtonType.Filter}>
-            JavaScript
-          </ClickButton>
+
+          {sortedTechnology.map((tech) => (
+            <ClickButton
+              key={tech}
+              size={ButtonSize.Small}
+              type={ButtonType.Filter}
+              onClick={() => SelectProjectFilter(tech)}
+              active={selectFilter.includes(tech)}
+            >
+              {tech}
+            </ClickButton>
+          ))}
           <span
             className="flex items-center justify-center gap-1  text-charcoal border-emerald-500
           border-2 rounded-full pl-4 pr-2 py-1 hover:bg-emerald/10

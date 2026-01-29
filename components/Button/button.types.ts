@@ -3,6 +3,7 @@ export enum ButtonType {
   Secondary = "Secondary",
   Submit = "Submit",
   Filter = "Filter",
+  Selected = "Selected",
 }
 
 export enum ButtonSize {

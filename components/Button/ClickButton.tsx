@@ -8,6 +8,7 @@ interface ButtonProps {
   submit?: boolean;
   disabled?: boolean;
   children: React.ReactNode;
+  active?: boolean;
   onClick?: () => void;
 }
 
@@ -17,6 +18,7 @@ export default function ClickButton({
   submit,
   disabled,
   children,
+  active,
   onClick,
 }: ButtonProps): React.JSX.Element {
   const buttonType =
@@ -26,7 +28,9 @@ export default function ClickButton({
         ? buttonStyles.secondaryButtonTypeStyles
         : type === ButtonType.Submit
           ? buttonStyles.submitButtonTypeStyles
-          : buttonStyles.filterButtonTypeStyles;
+          : active
+            ? buttonStyles.selectedFilterTypeStyles
+            : buttonStyles.filterButtonTypeStyles;
 
   const buttonSize =
     size === ButtonSize.Large
