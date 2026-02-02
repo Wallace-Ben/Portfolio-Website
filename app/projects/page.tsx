@@ -88,7 +88,7 @@ export default function Projects() {
           Projects
         </h2>
 
-        <div className="flex gap-4 mb-10">
+        <div className="flex gap-4 mb-8">
           <span className="flex text-emerald-500 font-semibold items-center gap-2 text-lg">
             <IoFilter size={23} />
             <p>Filter by:</p>
@@ -108,19 +108,23 @@ export default function Projects() {
               {tech}
             </ClickButton>
           ))}
+
           <HiddenMenuButton
             size={ButtonSize.Small}
             type={ButtonType.Filter}
             onClick={() => setToggleMenu(!toggleMenu)}
             active={toggleMenu}
           >
-            More
-            <IoChevronDown className="mt-0.5" size={19} />
+            {toggleMenu ? "Hide" : "More"}
+            <IoChevronDown
+              className={`transition-transform duration-300 ${toggleMenu ? "rotate-180" : ""}`}
+              size={19}
+            />
           </HiddenMenuButton>
         </div>
 
         <div
-          className={`flex flex-wrap justify-center gap-4 max-w-5xl mt-[-20] ${toggleMenu ? "max-h-50 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-5" : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"}`}
+          className={`flex flex-wrap justify-center gap-4 max-w-5xl  ${toggleMenu ? "max-h-50 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-10" : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"}`}
         >
           {sortedTechnology.slice(10).map((tech) => (
             <ClickButton
@@ -140,7 +144,7 @@ export default function Projects() {
 
         {filteredProjects.length > 0 ? (
           <>
-            <div className="flex flex-wrap gap-8 justify-center">
+            <div className="flex flex-wrap gap-6 justify-center">
               {projects.map((project: Project) => (
                 <div key={project.id}>
                   <ProjectCard data={project} />
