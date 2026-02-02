@@ -119,24 +119,24 @@ export default function Projects() {
           </HiddenMenuButton>
         </div>
 
-        {toggleMenu && (
-          <div className="flex flex-wrap justify-center gap-4 max-w-5xl mb-10 mt-[-20]">
-            {sortedTechnology.slice(10).map((tech) => (
-              <ClickButton
-                key={tech}
-                size={ButtonSize.Small}
-                type={ButtonType.Filter}
-                onClick={() => {
-                  SelectProjectFilter(tech);
-                  setCurrentPage(1);
-                }}
-                active={selectFilter.includes(tech)}
-              >
-                {tech}
-              </ClickButton>
-            ))}
-          </div>
-        )}
+        <div
+          className={`flex flex-wrap justify-center gap-4 max-w-5xl mt-[-20] ${toggleMenu ? "max-h-50 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-5" : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"}`}
+        >
+          {sortedTechnology.slice(10).map((tech) => (
+            <ClickButton
+              key={tech}
+              size={ButtonSize.Small}
+              type={ButtonType.Filter}
+              onClick={() => {
+                SelectProjectFilter(tech);
+                setCurrentPage(1);
+              }}
+              active={selectFilter.includes(tech)}
+            >
+              {tech}
+            </ClickButton>
+          ))}
+        </div>
 
         {filteredProjects.length > 0 ? (
           <>

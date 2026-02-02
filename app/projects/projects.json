@@ -4,7 +4,7 @@
     "title": "Project 1",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "React", "CSS"],
-    "keywords": ["JavaScript", "React", "CSS", "Frontend", "UI", "Web"],
+    "keywords": ["JavaScript", "React", "CSS", "Frontend", "UI"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-01"
@@ -24,7 +24,7 @@
     "title": "Project 3",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["TypeScript", "React", "Excel"],
-    "keywords": ["TypeScript", "React", "Excel", "Hooks", "Frontend"],
+    "keywords": ["TypeScript", "React", "Excel", "Frontend", "Hooks"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-03"
@@ -34,14 +34,7 @@
     "title": "Project 4",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "Node.js", "Express"],
-    "keywords": [
-      "JavaScript",
-      "Node.js",
-      "Express",
-      "Backend",
-      "Server",
-      "API"
-    ],
+    "keywords": ["JavaScript", "Node.js", "Express", "Backend", "API"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-04"
@@ -50,8 +43,8 @@
     "id": "5",
     "title": "Project 5",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "CSS", "MS Word"],
-    "keywords": ["React", "CSS", "MS Word", "Layout", "Mobile"],
+    "key_skills": ["React", "CSS", "UI"],
+    "keywords": ["React", "CSS", "UI", "Frontend"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-05"
@@ -71,7 +64,7 @@
     "title": "Project 7",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "Testing", "Jest"],
-    "keywords": ["JavaScript", "Testing", "Jest", "Unit Tests", "QA"],
+    "keywords": ["JavaScript", "Testing", "Jest"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-07"
@@ -81,7 +74,7 @@
     "title": "Project 8",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["React", "Performance", "Optimization"],
-    "keywords": ["React", "Performance", "Optimization", "Lazy Loading", "UX"],
+    "keywords": ["React", "Performance", "Optimization", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-08"
@@ -91,7 +84,7 @@
     "title": "Project 9",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["HTML", "Accessibility", "CSS"],
-    "keywords": ["HTML", "Accessibility", "CSS", "ARIA", "WCAG"],
+    "keywords": ["HTML", "Accessibility", "CSS", "UI"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-09"
@@ -101,7 +94,7 @@
     "title": "Project 10",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "Authentication", "Security"],
-    "keywords": ["JavaScript", "Authentication", "Security", "JWT", "Tokens"],
+    "keywords": ["JavaScript", "Authentication", "Security"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-10"
@@ -121,7 +114,7 @@
     "title": "Project 12",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["Node.js", "Database", "SQL"],
-    "keywords": ["Node.js", "Database", "SQL", "Queries", "Backend"],
+    "keywords": ["Node.js", "Database", "SQL", "Backend"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-12"
@@ -130,8 +123,8 @@
     "id": "13",
     "title": "Project 13",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "DOM", "Events"],
-    "keywords": ["JavaScript", "DOM", "Events", "Browser", "UI"],
+    "key_skills": ["JavaScript", "UI", "Events"],
+    "keywords": ["JavaScript", "UI", "Events"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-13"
@@ -141,7 +134,7 @@
     "title": "Project 14",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["React", "Routing", "SPA"],
-    "keywords": ["React", "Routing", "SPA", "Navigation", "Frontend"],
+    "keywords": ["React", "Routing", "SPA", "Frontend"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-14"
@@ -150,8 +143,8 @@
     "id": "15",
     "title": "Project 15",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Interfaces", "Refactoring"],
-    "keywords": ["TypeScript", "Interfaces", "Refactoring", "Maintainability"],
+    "key_skills": ["TypeScript", "Data Structures", "Algorithms"],
+    "keywords": ["TypeScript", "Data Structures", "Algorithms"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-15"
@@ -161,7 +154,7 @@
     "title": "Project 16",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["Node.js", "Authentication", "API"],
-    "keywords": ["Node.js", "Authentication", "API", "JWT", "Security"],
+    "keywords": ["Node.js", "Authentication", "API", "Security"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-16"
@@ -181,7 +174,7 @@
     "title": "Project 18",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "Async", "Promises"],
-    "keywords": ["JavaScript", "Async", "Promises", "Fetch", "API"],
+    "keywords": ["JavaScript", "Async", "Promises", "API"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-18"
@@ -191,7 +184,7 @@
     "title": "Project 19",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["CSS", "Animations", "UX"],
-    "keywords": ["CSS", "Animations", "UX", "Transitions", "UI"],
+    "keywords": ["CSS", "Animations", "UX", "UI"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-19"
@@ -201,7 +194,7 @@
     "title": "Project 20",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["React", "Testing", "Jest"],
-    "keywords": ["React", "Testing", "Jest", "Unit Tests"],
+    "keywords": ["React", "Testing", "Jest"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-20"
@@ -211,7 +204,7 @@
     "title": "Project 21",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["Node.js", "Performance", "Optimization"],
-    "keywords": ["Node.js", "Performance", "Optimization", "Scaling"],
+    "keywords": ["Node.js", "Performance", "Optimization"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-21"
@@ -220,8 +213,8 @@
     "id": "22",
     "title": "Project 22",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Modules", "Bundling"],
-    "keywords": ["JavaScript", "Modules", "Bundling", "Build"],
+    "key_skills": ["JavaScript", "Build", "Frontend"],
+    "keywords": ["JavaScript", "Build", "Frontend"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-22"
@@ -240,8 +233,8 @@
     "id": "24",
     "title": "Project 24",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "API", "Integration"],
-    "keywords": ["TypeScript", "API", "Integration", "HTTP"],
+    "key_skills": ["TypeScript", "API", "HTTP"],
+    "keywords": ["TypeScript", "API", "HTTP", "JSON"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-24"
@@ -251,7 +244,7 @@
     "title": "Project 25",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["JavaScript", "Data Structures", "Algorithms"],
-    "keywords": ["JavaScript", "Data Structures", "Algorithms", "Logic"],
+    "keywords": ["JavaScript", "Data Structures", "Algorithms"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-25"
@@ -271,7 +264,7 @@
     "title": "Project 27",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["Node.js", "Logging", "Error Handling"],
-    "keywords": ["Node.js", "Logging", "Error Handling", "Debugging"],
+    "keywords": ["Node.js", "Logging", "Error Handling"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-27"
@@ -280,8 +273,8 @@
     "id": "28",
     "title": "Project 28",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Browser APIs", "Web Storage"],
-    "keywords": ["JavaScript", "Browser APIs", "Web Storage", "LocalStorage"],
+    "key_skills": ["JavaScript", "API", "Frontend"],
+    "keywords": ["JavaScript", "API", "Frontend"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-28"
@@ -291,7 +284,7 @@
     "title": "Project 29",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
     "key_skills": ["React", "SSR", "Performance"],
-    "keywords": ["React", "SSR", "Performance", "Rendering"],
+    "keywords": ["React", "SSR", "Performance"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-29"
@@ -300,8 +293,8 @@
     "id": "30",
     "title": "Project 30",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Generics", "Typing"],
-    "keywords": ["TypeScript", "Generics", "Typing", "Safety"],
+    "key_skills": ["TypeScript", "Data Structures", "Algorithms"],
+    "keywords": ["TypeScript", "Data Structures", "Algorithms"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-30"
@@ -310,8 +303,8 @@
     "id": "31",
     "title": "Project 31",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Queues", "Async Jobs"],
-    "keywords": ["Node.js", "Queues", "Async Jobs", "Workers"],
+    "key_skills": ["Node.js", "Async", "API"],
+    "keywords": ["Node.js", "Async", "API"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-01-31"
@@ -320,8 +313,8 @@
     "id": "32",
     "title": "Project 32",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Error Handling", "Debugging"],
-    "keywords": ["JavaScript", "Error Handling", "Debugging", "Exceptions"],
+    "key_skills": ["JavaScript", "React", "UI"],
+    "keywords": ["JavaScript", "React", "UI"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-01"
@@ -330,8 +323,8 @@
     "id": "33",
     "title": "Project 33",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Internationalization", "i18n"],
-    "keywords": ["React", "Internationalization", "i18n", "Localization"],
+    "key_skills": ["Node.js", "API", "UX"],
+    "keywords": ["Node.js", "API", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-02"
@@ -340,8 +333,8 @@
     "id": "34",
     "title": "Project 34",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Linting", "Code Quality"],
-    "keywords": ["TypeScript", "Linting", "Code Quality", "Standards"],
+    "key_skills": ["Node.js", "API", "UX"],
+    "keywords": ["Node.js", "API", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-03"
@@ -360,8 +353,8 @@
     "id": "36",
     "title": "Project 36",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Charts", "Data Visualization"],
-    "keywords": ["React", "Charts", "Data Visualization", "Graphs"],
+    "key_skills": ["Node.js", "API", "UX"],
+    "keywords": ["Node.js", "API", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-05"
@@ -370,8 +363,8 @@
     "id": "37",
     "title": "Project 37",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Caching", "Performance"],
-    "keywords": ["Node.js", "Caching", "Performance", "Redis"],
+    "key_skills": ["Node.js", "API", "UX"],
+    "keywords": ["Node.js", "API", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-06"
@@ -380,8 +373,8 @@
     "id": "38",
     "title": "Project 38",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Monitoring", "Logging"],
-    "keywords": ["JavaScript", "Monitoring", "Logging", "Observability"],
+    "key_skills": ["JavaScript", "API", "UX"],
+    "keywords": ["JavaScript", "API", "UX"],
     "url": "/",
     "image": "/images/project-screenshot.png",
     "date": "2026-02-07"
