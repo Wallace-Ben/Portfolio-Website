@@ -7,20 +7,25 @@ import { PaginationArray, NumOfPages } from "@/lib/pagination";
 import { IoFilter, IoChevronDown } from "react-icons/io5";
 import ClickButton from "@/components/Button/ClickButton";
 import { ButtonSize, ButtonType } from "@/components/Button/button.types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HiddenMenuButton from "@/components/Button/HiddenMenuButton";
 
 export default function Projects() {
-  const numPerPage = 8;
+  const [selectFilter, setSelectFilter] = useState<string[]>([]);
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const numPerPage = isMobile ? 4 : 8;
   const selectedStyles = "font-semibold pointer-events-none border-b-2 pb-0.5";
   const generalStyles =
     "text-emerald-700 text-lg hover:underline hover:underline-offset-4";
 
-  const [selectFilter, setSelectFilter] = useState<string[]>([]);
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-
   const techObject: Record<string, { count: number; index: number[] }> = {};
+
+  useEffect(() => {
+    setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+  }, []);
 
   let consoleProjects: Project[] = [];
 
@@ -84,49 +89,56 @@ export default function Projects() {
   return (
     <div className="flex justify-center bg-mist">
       <div className="flex flex-col relative lg:py-[2%] lg:mb-5 items-center max-w-7xl">
-        <h2 className="xl:text-4xl text-2xl text-emerald-500 font-semibold mt-5 mb-7">
+        <h2 className="xl:text-4xl text-3xl text-emerald-500 font-semibold mt-5 md:mb-7 mb-4">
           Projects
         </h2>
 
-        <div className="flex gap-4 mb-8">
-          <span className="flex text-emerald-500 font-semibold items-center gap-2 text-lg">
+        <div className="flex md:gap-4 gap-2 mb-8 flex-col md:flex-row">
+          <span className="flex text-emerald-500 font-semibold items-center gap-2 text-lg justify-center">
             <IoFilter size={23} />
             <p>Filter by:</p>
           </span>
 
-          {sortedTechnology.slice(0, 10).map((tech) => (
-            <ClickButton
-              key={tech}
+          <div className="flex flex-wrap md:flex-nowrap justify-center md:gap-4 gap-2 md:px-0 px-3">
+            {sortedTechnology.slice(0, 10).map((tech) => (
+              <ClickButton
+                key={tech}
+                size={ButtonSize.Small}
+                type={ButtonType.Filter}
+                onClick={() => {
+                  SelectProjectFilter(tech);
+                  setCurrentPage(1);
+                }}
+                active={selectFilter.includes(tech)}
+              >
+                {tech}
+              </ClickButton>
+            ))}
+
+            <HiddenMenuButton
               size={ButtonSize.Small}
               type={ButtonType.Filter}
-              onClick={() => {
-                SelectProjectFilter(tech);
-                setCurrentPage(1);
-              }}
-              active={selectFilter.includes(tech)}
+              onClick={() => setToggleMenu(!toggleMenu)}
+              active={toggleMenu}
             >
-              {tech}
-            </ClickButton>
-          ))}
-
-          <HiddenMenuButton
-            size={ButtonSize.Small}
-            type={ButtonType.Filter}
-            onClick={() => setToggleMenu(!toggleMenu)}
-            active={toggleMenu}
-          >
-            {toggleMenu ? "Hide" : "More"}
-            <IoChevronDown
-              className={`transition-transform duration-300 ${toggleMenu ? "rotate-180" : ""}`}
-              size={19}
-            />
-          </HiddenMenuButton>
+              {toggleMenu ? "Hide" : "More"}
+              <IoChevronDown
+                className={`transition-transform duration-300 ${toggleMenu ? "rotate-180" : ""}`}
+                size={19}
+              />
+            </HiddenMenuButton>
+          </div>
         </div>
 
         <div
-          className={`flex flex-wrap justify-center gap-4 max-w-5xl  ${toggleMenu ? "max-h-50 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-10" : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"}`}
+          className={`flex flex-wrap justify-center md:gap-4 gap-2 max-w-5xl md:px-5 px-10
+            ${
+              toggleMenu
+                ? "max-h-55 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-10 pb-2"
+                : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"
+            }`}
         >
-          {sortedTechnology.slice(10).map((tech) => (
+          {sortedTechnology.slice(10, isMobile ? 22 : undefined).map((tech) => (
             <ClickButton
               key={tech}
               size={ButtonSize.Small}
@@ -152,7 +164,7 @@ export default function Projects() {
               ))}
             </div>
 
-            <div className="flex gap-8 mt-10">
+            <div className="flex md:gap-8 gap-15 mt-10 md:mb-0 mb-7">
               <Link
                 href="/projects"
                 onClick={() => setCurrentPage(currentPage - 1)}
@@ -160,7 +172,7 @@ export default function Projects() {
               >
                 Previous
               </Link>
-              {filteredProjects.length > numPerPage
+              {!isMobile && filteredProjects.length > numPerPage
                 ? PaginationArray(
                     currentPage,
                     numPerPage,

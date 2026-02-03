@@ -19,13 +19,11 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
     <>
       <Link href={`/projects/${data.url}`} className="contents">
         <div
-          className="flex flex-col justify-between items-center xl:py-5 px-20 max-w-[302px] cursor-pointer
+          className="flex flex-col justify-between items-center xl:py-5 px-20 max-w-[300px] cursor-pointer
       border-2 border-emerald-500/20 shadow-md rounded-2xl bg-mist-lighter hover:bg-mist-air hover:border-emerald-300 hover:scale-105 transition duration-400"
         >
-          <div
-            className={`flex flex-col md:flex-1 lg:flex-2 md:mb-0 mb-8 items-center justify-center`}
-          >
-            <h2 className="text-emerald-500 font-semibold text-xl mb-1">
+          <div className="flex flex-col md:flex-1 lg:flex-2 md:mb-0 mb-8 items-center justify-center md:py-2 pt-2">
+            <h2 className="text-emerald-500 font-semibold text-xl mb-2 md:mt-0 mt-3">
               {data.title}
             </h2>
             <div className="relative w-60 h-30 rounded-lg overflow-hidden border-2 hover:opacity-80 border-emerald-400 mb-2">
