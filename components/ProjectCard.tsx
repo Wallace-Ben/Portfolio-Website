@@ -17,7 +17,7 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
 
   return (
     <>
-      <Link href="/contact" className="contents">
+      <Link href={`/projects/${data.url}`} className="contents">
         <div
           className="flex flex-col justify-between items-center xl:py-5 px-20 max-w-[302px] cursor-pointer
       border-2 border-emerald-500/20 shadow-md rounded-2xl bg-mist-lighter hover:bg-mist-air hover:border-emerald-300 hover:scale-105 transition duration-400"
