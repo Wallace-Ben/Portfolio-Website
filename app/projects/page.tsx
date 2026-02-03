@@ -24,7 +24,7 @@ export default function Projects() {
   const techObject: Record<string, { count: number; index: number[] }> = {};
 
   useEffect(() => {
-    setIsMobile(window.matchMedia("(max-width: 767px)").matches);
+    setIsMobile(window.matchMedia("(max-width: 639px)").matches);
   }, []);
 
   let consoleProjects: Project[] = [];
@@ -93,13 +93,13 @@ export default function Projects() {
           Projects
         </h2>
 
-        <div className="flex md:gap-4 gap-2 mb-8 flex-col md:flex-row">
+        <div className="flex md:gap-4 gap-2 mb-8 flex-col xl:flex-row xl:px-0 lg:px-20">
           <span className="flex text-emerald-500 font-semibold items-center gap-2 text-lg justify-center">
             <IoFilter size={23} />
             <p>Filter by:</p>
           </span>
 
-          <div className="flex flex-wrap md:flex-nowrap justify-center md:gap-4 gap-2 md:px-0 px-3">
+          <div className="flex flex-wrap xl:flex-nowrap justify-center md:gap-4 gap-2 xl:px-0 md:px-10 px-4">
             {sortedTechnology.slice(0, 10).map((tech) => (
               <ClickButton
                 key={tech}
@@ -131,14 +131,14 @@ export default function Projects() {
         </div>
 
         <div
-          className={`flex flex-wrap justify-center md:gap-4 gap-2 max-w-5xl md:px-5 px-10
+          className={`flex flex-wrap justify-center md:gap-4 gap-2 max-w-5xl xl:px-5 px-10
             ${
               toggleMenu
                 ? "max-h-55 opacity-100 transition-all duration-400 ease-in-out overflow-hidden mb-10 pb-2"
                 : "max-h-0 opacity-0 transition-all duration-400 ease-in-out overflow-hidden"
             }`}
         >
-          {sortedTechnology.slice(10, isMobile ? 22 : undefined).map((tech) => (
+          {sortedTechnology.slice(10, isMobile ? 22 : 40).map((tech) => (
             <ClickButton
               key={tech}
               size={ButtonSize.Small}
@@ -164,7 +164,7 @@ export default function Projects() {
               ))}
             </div>
 
-            <div className="flex md:gap-8 gap-15 mt-10 md:mb-0 mb-7">
+            <div className="flex md:gap-8 gap-15 mt-10 lg:mb-0 mb-7">
               <Link
                 href="/projects"
                 onClick={() => setCurrentPage(currentPage - 1)}
@@ -210,7 +210,7 @@ export default function Projects() {
             </div>
           </>
         ) : (
-          <p className="text-xl text-emerald-500 font-semibold">
+          <p className="text-center text-xl text-emerald-500 font-semibold lg:px-0 px-10">
             No projects match the selected filters.
           </p>
         )}

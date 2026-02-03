@@ -22,7 +22,7 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
           className="flex flex-col justify-between items-center xl:py-5 px-20 max-w-[300px] cursor-pointer
       border-2 border-emerald-500/20 shadow-md rounded-2xl bg-mist-lighter hover:bg-mist-air hover:border-emerald-300 hover:scale-105 transition duration-400"
         >
-          <div className="flex flex-col md:flex-1 lg:flex-2 md:mb-0 mb-8 items-center justify-center md:py-2 pt-2">
+          <div className="flex flex-col md:flex-1 lg:flex-2 md:mb-0 mb-8 items-center justify-center md:py-5 xl:py-2 pt-2">
             <h2 className="text-emerald-500 font-semibold text-xl mb-2 md:mt-0 mt-3">
               {data.title}
             </h2>
