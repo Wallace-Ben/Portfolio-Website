@@ -1,382 +1,270 @@
 [
   {
     "id": "1",
-    "title": "Project 1",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "React", "CSS"],
-    "keywords": ["JavaScript", "React", "CSS", "Frontend", "UI"],
-    "url": "project-1",
+    "title": "Analytics Dashboard",
+    "recent_project_summary": "A responsive analytics dashboard built for monitoring KPIs in real time.",
+    "project_card_summary": "Real-time analytics dashboard.",
+    "key_skills": ["React", "TypeScript", "Charts"],
+    "keywords": ["React", "TypeScript", "Charts", "Dashboard", "UI", "Data"],
+    "url": "analytics-dashboard",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-01"
+    "date": "2026-01-01",
+    "completed": true,
+    "type": "Guided",
+    "focus": "Frontend",
+    "context": "Personal",
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "This project focused on building a modular dashboard layout capable of supporting multiple data sources."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Charts were implemented with performance in mind, ensuring smooth updates as data changed.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Analytics charts overview"
+      },
+      {
+        "id": "c3",
+        "type": "text",
+        "text": "Special attention was paid to component reusability and type safety across the codebase."
+      }
+    ]
   },
   {
     "id": "2",
-    "title": "Project 2",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "React", "API"],
-    "keywords": ["JavaScript", "React", "API", "HTTP", "JSON", "Frontend"],
-    "url": "/",
+    "title": "E-commerce Product Page",
+    "recent_project_summary": "A conversion-focused product page with reusable UI sections.",
+    "project_card_summary": "High-conversion product page.",
+    "key_skills": ["React", "CSS", "UX"],
+    "keywords": ["React", "CSS", "UX", "E-commerce", "UI"],
+    "url": "ecommerce-product",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-02"
+    "date": "2026-01-05",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The layout was designed to highlight key product information without overwhelming the user."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Reusable sections made it easy to support multiple product types and configurations.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Product page layout"
+      }
+    ]
   },
   {
     "id": "3",
-    "title": "Project 3",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "React", "Excel"],
-    "keywords": ["TypeScript", "React", "Excel", "Frontend", "Hooks"],
-    "url": "/",
+    "title": "API Management Tool",
+    "recent_project_summary": "An internal tool for testing and monitoring REST APIs.",
+    "project_card_summary": "API testing and monitoring tool.",
+    "key_skills": ["Node.js", "API", "Frontend"],
+    "keywords": ["Node.js", "API", "Frontend", "REST", "Tools"],
+    "url": "api-management",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-03"
+    "date": "2026-01-10",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The tool provided a single interface for inspecting requests, responses, and error states."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "A request builder supported headers, query params, and authentication methods.",
+        "src": "/images/project-screenshot.png",
+        "alt": "API request builder"
+      }
+    ]
   },
   {
     "id": "4",
-    "title": "Project 4",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Node.js", "Express"],
-    "keywords": ["JavaScript", "Node.js", "Express", "Backend", "API"],
-    "url": "/",
+    "title": "Design System",
+    "recent_project_summary": "A scalable component library shared across multiple projects.",
+    "project_card_summary": "Reusable design system.",
+    "key_skills": ["React", "Design Systems", "CSS"],
+    "keywords": ["React", "Design Systems", "CSS", "UI", "Components"],
+    "url": "design-system",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-04"
+    "date": "2026-01-15",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "Each component was built with strict prop contracts and predictable styling tokens."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "This approach reduced visual inconsistencies and improved development speed.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Design system components"
+      }
+    ]
   },
   {
     "id": "5",
-    "title": "Project 5",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "CSS", "UI"],
-    "keywords": ["React", "CSS", "UI", "Frontend"],
-    "url": "/",
+    "title": "Real-Time Chat App",
+    "recent_project_summary": "A lightweight chat application using real-time messaging.",
+    "project_card_summary": "Real-time messaging app.",
+    "key_skills": ["JavaScript", "WebSockets", "UI"],
+    "keywords": ["JavaScript", "WebSockets", "UI", "Real-time", "Chat"],
+    "url": "chat-app",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-05"
+    "date": "2026-01-20",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The app supports live messaging and connection state awareness."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "State handling was designed to remain stable during intermittent network issues.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Chat interface"
+      }
+    ]
   },
   {
     "id": "6",
-    "title": "Project 6",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Node.js", "API"],
-    "keywords": ["TypeScript", "Node.js", "API", "Backend", "REST"],
-    "url": "/",
+    "title": "Form Validation Suite",
+    "recent_project_summary": "A flexible form system with robust validation rules.",
+    "project_card_summary": "Form validation system.",
+    "key_skills": ["React", "TypeScript", "Forms"],
+    "keywords": ["React", "TypeScript", "Forms", "Validation", "UX"],
+    "url": "form-validation",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-06"
+    "date": "2026-01-24",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "Forms were built to handle complex validation scenarios with clear user feedback."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Validation logic was fully typed to prevent runtime errors.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Form validation feedback"
+      }
+    ]
   },
   {
     "id": "7",
-    "title": "Project 7",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Testing", "Jest"],
-    "keywords": ["JavaScript", "Testing", "Jest"],
-    "url": "/",
+    "title": "Performance Optimization Case Study",
+    "recent_project_summary": "A focused project on improving frontend performance metrics.",
+    "project_card_summary": "Frontend performance optimization.",
+    "key_skills": ["React", "Performance", "Optimization"],
+    "keywords": ["React", "Performance", "Optimization", "UX"],
+    "url": "performance-optimization",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-07"
+    "date": "2026-01-27",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The project analyzed render bottlenecks and unnecessary re-renders."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Measured improvements were validated using real-world usage scenarios.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Performance metrics"
+      }
+    ]
   },
   {
     "id": "8",
-    "title": "Project 8",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Performance", "Optimization"],
-    "keywords": ["React", "Performance", "Optimization", "UX"],
-    "url": "/",
+    "title": "Accessibility Improvements",
+    "recent_project_summary": "A project focused on improving accessibility and keyboard navigation.",
+    "project_card_summary": "Accessibility-focused UI work.",
+    "key_skills": ["HTML", "Accessibility", "CSS"],
+    "keywords": ["HTML", "Accessibility", "CSS", "UI"],
+    "url": "accessibility-improvements",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-08"
+    "date": "2026-01-30",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "Semantic HTML and ARIA attributes were used to improve screen reader support."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Keyboard navigation was tested and refined across all interactive elements.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Accessible UI example"
+      }
+    ]
   },
   {
     "id": "9",
-    "title": "Project 9",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["HTML", "Accessibility", "CSS"],
-    "keywords": ["HTML", "Accessibility", "CSS", "UI"],
-    "url": "/",
+    "title": "Authentication Flow",
+    "recent_project_summary": "Implementation of secure authentication patterns.",
+    "project_card_summary": "Authentication and security flow.",
+    "key_skills": ["JavaScript", "Authentication", "Security"],
+    "keywords": ["JavaScript", "Authentication", "Security", "Auth"],
+    "url": "authentication-flow",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-09"
+    "date": "2026-02-02",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The flow handled login, logout, and protected routes securely."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Error states and edge cases were clearly communicated to users.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Authentication screens"
+      }
+    ]
   },
   {
     "id": "10",
-    "title": "Project 10",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Authentication", "Security"],
-    "keywords": ["JavaScript", "Authentication", "Security"],
-    "url": "/",
+    "title": "Component Refactoring Project",
+    "recent_project_summary": "Refactoring legacy components into reusable patterns.",
+    "project_card_summary": "Reusable component refactor.",
+    "key_skills": ["React", "Reusable Components", "UI"],
+    "keywords": ["React", "Reusable Components", "UI", "Components"],
+    "url": "component-refactor",
     "image": "/images/project-screenshot.png",
-    "date": "2026-01-10"
-  },
-  {
-    "id": "11",
-    "title": "Project 11",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "TypeScript", "Forms"],
-    "keywords": ["React", "TypeScript", "Forms", "Validation", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-11"
-  },
-  {
-    "id": "12",
-    "title": "Project 12",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Database", "SQL"],
-    "keywords": ["Node.js", "Database", "SQL", "Backend"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-12"
-  },
-  {
-    "id": "13",
-    "title": "Project 13",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "UI", "Events"],
-    "keywords": ["JavaScript", "UI", "Events"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-13"
-  },
-  {
-    "id": "14",
-    "title": "Project 14",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Routing", "SPA"],
-    "keywords": ["React", "Routing", "SPA", "Frontend"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-14"
-  },
-  {
-    "id": "15",
-    "title": "Project 15",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Data Structures", "Algorithms"],
-    "keywords": ["TypeScript", "Data Structures", "Algorithms"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-15"
-  },
-  {
-    "id": "16",
-    "title": "Project 16",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Authentication", "API"],
-    "keywords": ["Node.js", "Authentication", "API", "Security"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-16"
-  },
-  {
-    "id": "17",
-    "title": "Project 17",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Context API", "Excel"],
-    "keywords": ["React", "Context API", "Excel", "Hooks"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-17"
-  },
-  {
-    "id": "18",
-    "title": "Project 18",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Async", "Promises"],
-    "keywords": ["JavaScript", "Async", "Promises", "API"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-18"
-  },
-  {
-    "id": "19",
-    "title": "Project 19",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["CSS", "Animations", "UX"],
-    "keywords": ["CSS", "Animations", "UX", "UI"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-19"
-  },
-  {
-    "id": "20",
-    "title": "Project 20",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Testing", "Jest"],
-    "keywords": ["React", "Testing", "Jest"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-20"
-  },
-  {
-    "id": "21",
-    "title": "Project 21",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Performance", "Optimization"],
-    "keywords": ["Node.js", "Performance", "Optimization"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-21"
-  },
-  {
-    "id": "22",
-    "title": "Project 22",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Build", "Frontend"],
-    "keywords": ["JavaScript", "Build", "Frontend"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-22"
-  },
-  {
-    "id": "23",
-    "title": "Project 23",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Forms", "Validation"],
-    "keywords": ["React", "Forms", "Validation", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-23"
-  },
-  {
-    "id": "24",
-    "title": "Project 24",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "API", "HTTP"],
-    "keywords": ["TypeScript", "API", "HTTP", "JSON"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-24"
-  },
-  {
-    "id": "25",
-    "title": "Project 25",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "Data Structures", "Algorithms"],
-    "keywords": ["JavaScript", "Data Structures", "Algorithms"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-25"
-  },
-  {
-    "id": "26",
-    "title": "Project 26",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "Reusable Components", "Design Systems"],
-    "keywords": ["React", "Reusable Components", "Design Systems", "UI"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-26"
-  },
-  {
-    "id": "27",
-    "title": "Project 27",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Logging", "Error Handling"],
-    "keywords": ["Node.js", "Logging", "Error Handling"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-27"
-  },
-  {
-    "id": "28",
-    "title": "Project 28",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "API", "Frontend"],
-    "keywords": ["JavaScript", "API", "Frontend"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-28"
-  },
-  {
-    "id": "29",
-    "title": "Project 29",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["React", "SSR", "Performance"],
-    "keywords": ["React", "SSR", "Performance"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-29"
-  },
-  {
-    "id": "30",
-    "title": "Project 30",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["TypeScript", "Data Structures", "Algorithms"],
-    "keywords": ["TypeScript", "Data Structures", "Algorithms"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-30"
-  },
-  {
-    "id": "31",
-    "title": "Project 31",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "Async", "API"],
-    "keywords": ["Node.js", "Async", "API"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-01-31"
-  },
-  {
-    "id": "32",
-    "title": "Project 32",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "React", "UI"],
-    "keywords": ["JavaScript", "React", "UI"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-01"
-  },
-  {
-    "id": "33",
-    "title": "Project 33",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "API", "UX"],
-    "keywords": ["Node.js", "API", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-02"
-  },
-  {
-    "id": "34",
-    "title": "Project 34",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "API", "UX"],
-    "keywords": ["Node.js", "API", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-03"
-  },
-  {
-    "id": "35",
-    "title": "Project 35",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "WebSockets", "Real-time"],
-    "keywords": ["JavaScript", "WebSockets", "Real-time", "Events"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-04"
-  },
-  {
-    "id": "36",
-    "title": "Project 36",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "API", "UX"],
-    "keywords": ["Node.js", "API", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-05"
-  },
-  {
-    "id": "37",
-    "title": "Project 37",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["Node.js", "API", "UX"],
-    "keywords": ["Node.js", "API", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-06"
-  },
-  {
-    "id": "38",
-    "title": "Project 38",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "key_skills": ["JavaScript", "API", "UX"],
-    "keywords": ["JavaScript", "API", "UX"],
-    "url": "/",
-    "image": "/images/project-screenshot.png",
-    "date": "2026-02-07"
+    "date": "2026-02-05",
+    "completed": true,
+    "content": [
+      {
+        "id": "c1",
+        "type": "text",
+        "text": "The goal was to reduce duplication and improve long-term maintainability."
+      },
+      {
+        "id": "c2",
+        "type": "textWithImage",
+        "text": "Refactored components were documented and reused across features.",
+        "src": "/images/project-screenshot.png",
+        "alt": "Reusable UI components"
+      }
+    ]
   }
 ]

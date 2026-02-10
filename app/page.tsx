@@ -4,12 +4,13 @@ import projectsData from "./projects/projects.json";
 import { Project } from "@/assets/types";
 
 export default function Home() {
+  const projects = projectsData as Project[];
   // Sort Projects array by most recent projects - may do a 'featured projects' section instead
   function dateSort(a: Project, b: Project) {
     return new Date(b.date).getTime() - new Date(a.date).getTime();
   }
 
-  const sortedData = projectsData.sort(dateSort);
+  const sortedData = projects.sort(dateSort);
 
   return (
     <>

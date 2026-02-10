@@ -54,7 +54,7 @@ export default function ProjectCard({ data }: Props): React.JSX.Element {
               ))}
             </div>
             <p className="text-center text-emerald-500 text-md mb-3">
-              {data.description}
+              {data.project_card_summary}
             </p>
             <ClickButton type={ButtonType.Primary} size={ButtonSize.Default}>
               Go to Project

@@ -49,7 +49,7 @@ export default function RecentProjectCard({
             {data.title}
           </h2>
           <p className="text-center text-emerald-500 text-md mb-5">
-            {data.description}
+            {data.recent_project_summary}
           </p>
           <LinkButton
             link={data.url}
